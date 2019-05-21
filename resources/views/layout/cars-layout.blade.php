@@ -15,8 +15,8 @@
     </head>
     <body>
 
-        <h1>Cars DB</h1>
         <div class="container">
+          <h1>Cars DB</h1>
           @yield('content')
           @yield('options')
         </div>

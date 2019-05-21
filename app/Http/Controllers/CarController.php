@@ -72,7 +72,9 @@ class CarController extends Controller
      */
     public function edit($id)
     {
-        //
+        $car = Car::findOrFail($id);
+
+        return view('edit-car', compact('car'));
     }
 
     /**
@@ -84,7 +86,18 @@ class CarController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+      $validateData = $request->validate([
+
+        'brand' => "required",
+        'model' => "required",
+        'displace' => "required|alpha_num",
+        'max-speed' => "required|alpha_num"
+      ]);
+
+      Car::whereId($id)->update($validateData);
+
+      return redirect('cars');
     }
 
     /**
@@ -95,6 +108,9 @@ class CarController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $car = Car::findOrFail($id);
+      $car->delete();
+
+      return redirect('cars');
     }
 }

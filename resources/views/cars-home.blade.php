@@ -26,8 +26,14 @@
     </div>
     <div class="icons">
 
-      <a href="#"><i class="far fa-edit"></i></a>
-      <a href="#"><i class="far fa-trash-alt"></i></a>
+      <a href="{{route('cars.edit',$car->id)}}"><i class="far fa-edit"></i></a>
+
+        <form  action="{{ route('cars.destroy',$car->id)}}" method="post">
+          @csrf
+          @method('DELETE')
+          <button type="submit" name="button"><i class="far fa-trash-alt" type="submit"></i></button>
+        </form>
+
     </div>
 
   </div>
