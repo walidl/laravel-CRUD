@@ -1,0 +1,84 @@
+h1{
+
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.container{
+
+
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+
+  .table{
+
+    .row{
+
+      display: flex;
+      padding: 5px 0;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+
+      .id{
+        width: 50px;
+        text-align: center;
+      }
+
+      .col{
+
+        width: 170px;
+        padding: 0 10px ;
+        text-align: center
+      }
+
+      .icons{
+
+      position : absolute;
+      right: 20px;
+
+      i{
+
+        margin: 0 10px;
+        font-size: 18px;
+
+
+        &:hover{
+
+          transform: scale(1.05);
+          color: blue;
+        }
+      }
+      }
+
+      &.title{
+
+        font-weight: bold;
+      }
+    }
+  }
+
+  .newCar{
+
+    text-align: center;
+    a{
+
+      display: inline-block;
+      font-size: 25px;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #3B78F9;
+      color: white;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+
+      &:hover{
+
+        background-color: darken(#3B78F9,20%)
+      }
+
+    }
+
+  }
+}
