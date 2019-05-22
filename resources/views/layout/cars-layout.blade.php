@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Pagamenti</title>
+        <title>Cars Databes</title>
 
 
 
@@ -15,8 +15,8 @@
     </head>
     <body>
 
+      <h1>CARS DATABASE</h1>
         <div class="container">
-          <h1>Cars DB</h1>
           @yield('content')
           @yield('options')
         </div>

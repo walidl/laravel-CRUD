@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layout.cars-layout');
+    route('cars.index');
 });
 
 ROUTE::resource('cars', 'CarController');

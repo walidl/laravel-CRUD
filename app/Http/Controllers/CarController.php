@@ -49,7 +49,7 @@ class CarController extends Controller
           'max-speed' => "required|alpha_num"
         ]);
 
-        $car = Car::create($validateData);
+        Car::create($validateData);
         return redirect('cars');
     }
 

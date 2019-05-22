@@ -1,15 +1,16 @@
+h1{
+
+  border-bottom: 1px solid darkblue;
+  background-color: darken($teal,20%);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
 .container{
   width: 80%;
   margin: auto;
 
-  h1{
-
-    border-bottom: 2px solid black;
-    color: #F24D38;
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
-  }
 
   .table{
 
@@ -19,10 +20,13 @@
       padding: 5px 0;
       border-bottom: 1px solid #ccc;
       position: relative;
+      font-size: 18px;
+
 
       .id{
         width: 50px;
         text-align: center;
+        font-weight: bold;
       }
 
       .col{
@@ -56,15 +60,26 @@
         &:hover{
 
           transform: scale(1.05);
-          color: blue;
+          color: $teal;
         }
       }
       }
 
+      &:nth-child(even){
+
+        background-color: white;
+      }
+
+      &:nth-child(odd){
+        background-color: #EFF0F1;
+      }
       &.title{
 
         font-weight: bold;
+        color: $blue;
+        background-color: darken(#EFF0F1,5%);
       }
+
     }
   }
 
@@ -77,14 +92,14 @@
       font-size: 25px;
       margin-top: 20px;
       padding: 10px;
-      background-color: #3B78F9;
+      background-color: $teal;
       color: white;
       border-radius: 10px;
       transition: background-color 0.3s ease;
 
       &:hover{
 
-        background-color: darken(#3B78F9,20%)
+        background-color: darken($teal,20%)
       }
 
     }
