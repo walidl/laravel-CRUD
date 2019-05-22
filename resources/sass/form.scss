@@ -5,7 +5,7 @@ form.post{
   align-items: center;
   width: 50%;
   padding: 20px;
-  border: 3px solid $teal;
+  border: 2px solid $navColor;
   border-radius: 5px;
 
 
@@ -17,16 +17,19 @@ form.post{
     label{
 
       display: inline-block;
-      width: 120px;
+      width: 150px;
       font-size: 20px;
       font-weight: bold;
-      color: $blue;
+      color: $laravRed;
     }
 
     input{
 
       padding: 5px;
       font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      border: 1px solid #ccc;
     }
 
     button{
@@ -37,14 +40,14 @@ form.post{
       padding: 10px;
       border: none;
       cursor: pointer;
-      background-color: $teal;
+      background-color: lighten($navColor, 10%);
       color: white;
       border-radius: 10px;
       transition: background-color 0.3s ease;
 
       &:hover{
 
-        background-color: darken($teal,20%)
+        background-color: $navColor
       }
     }
 

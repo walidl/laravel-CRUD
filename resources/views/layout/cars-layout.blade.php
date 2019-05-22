@@ -15,7 +15,8 @@
     </head>
     <body>
 
-      <h1>CARS DATABASE</h1>
+      @include('inc.header')
+      </div>
         <div class="container">
           @yield('content')
           @yield('options')

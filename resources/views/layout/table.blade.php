@@ -2,31 +2,23 @@
 
 @section('content')
 
-<div class="table">
+<table class=" table table-striped">
+  <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">BRAND</th>
+        <th scope="col"> MODEL</th>
+        <th scope="col">DISPLACE</th>
+        <th scope="col">MAX SPEED</th>
+        <th scope="col"></th>
 
-  <div class="row title">
-    <div class="id">
-      ID
-    </div>
-    <div class="col">
-      BRAND
-    </div>
-    <div class="col">
-      MODEL
-    </div>
-    <div class="col">
-      DISPLACEMENT
-    </div>
-    <div class="col">
-      MAX-SPEED
-    </div>
+    </tr>
+  </thead>
+  <tbody>
 
-
-  </div>
-
-  @yield('rows')
-
-</div>
+    @yield('rows')
+  </tbody>
+</table>
 
 
 @stop

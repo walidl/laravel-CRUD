@@ -1,0 +1,34 @@
+
+.edit{
+
+  .far{
+
+    font-size: 18px;
+  }
+
+  button{
+
+    background: none !important;
+    border: none !important;
+  }
+}
+
+.newCar{
+
+  a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    background-color: lighten($navColor, 10%);
+    transition: background-color 0.3s ease;
+  }
+
+
+  a:hover{
+
+    text-decoration: none;
+    background-color: $navColor;
+  }
+
+}
